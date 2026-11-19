@@ -48,7 +48,8 @@ def init_db():
         snapshot_date TEXT NOT NULL,
         need_period TEXT NOT NULL,
         customer TEXT,
-        forecast_qty REAL NOT NOT NULL,
+        forecast_qty REAL NOT NULL,
+        web: python app.py
         created_by TEXT,
         created_at TEXT DEFAULT CURRENT_TIMESTAMP,
         FOREIGN KEY(part_code) REFERENCES planning_parts(part_code) ON DELETE CASCADE
